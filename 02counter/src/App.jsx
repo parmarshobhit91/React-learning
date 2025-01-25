@@ -8,8 +8,13 @@ function App() {
   const addValue = () => {
     console.log("Value added", counter)
     if(counter < 20){
-    counter = counter + 1
-    setCounter(counter)}
+    // counter = counter + 1
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    
+    // setCounter(counter)
+  }
   }
 
   const decValue = () => {
